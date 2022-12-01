@@ -21,7 +21,9 @@ pipeline{
 
         stage('Test'){
             steps{
-                   g_script.tesApp()
+                script{
+                    g_script.testApp()
+                }
             }
         }
 
