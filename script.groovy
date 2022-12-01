@@ -24,10 +24,10 @@ def commitChanges(){
     withCredentials([usernamePassword(credentialsId:'github', usernameVariable: 'USER', passworsVariable: 'PSW')]){
         sh 'git config --global user.name "jenkins"'
         sh 'git config --global user.email "jenkins@jenkins.com"'
-        sh 'git remote set-url origin https://${USER}:${PSW}@github.com/BhairaviSanskriti/CI-pipeline-for-website'
+        sh "git remote set-url origin https://${USER}:${PSW}@github.com/BhairaviSanskriti/CI-pipeline-for-website"
         sh 'git add .'
         sh 'git commit -m "updated application version to ${BUILD_NUMBER}"'
-        sh 'git push origin HEAD:{BRANCH_NAME}'
+        sh 'git push origin HEAD:main'
     }
 }
 
