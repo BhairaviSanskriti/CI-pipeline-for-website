@@ -21,7 +21,7 @@ def updateVersion(){
 def commitChanges(){
     echo 'Commiting changes ...'
 
-    withCredentials([usernamePassword(credentialsId:'github', usernameVariable: 'USER', passworsVariable: 'PSW')]){
+    withCredentials([usernamePassword(credentialsId:'github', usernameVariable: 'USER', passwordVariable: 'PSW')]){
         sh 'git config --global user.name "jenkins"'
         sh 'git config --global user.email "jenkins@jenkins.com"'
         sh "git remote set-url origin https://${USER}:${PSW}@github.com/BhairaviSanskriti/CI-pipeline-for-website"
