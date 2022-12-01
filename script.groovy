@@ -6,6 +6,16 @@ def testApp(){
     echo 'Testing application ...'
 }
 
+def pushImage(){
+    withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PSW')]){
+                    echo 'Building image'
+                    sh 'docker build -t sanskriti-portoflio:{BUILD_NUMBER} .'
+                    sh 'echo ${PSW} | docker login -u ${USER} --password-stdin'
+                    echo 'Pushing image to DockerHub'
+                    sh 'docker push sanskriti-portoflio:{BUILD_NUMBER}'
+    }
+    echo 'Pushed image to DockerHub'
+}
 
 def deployApp(){
     echo 'Deploying application ...'
