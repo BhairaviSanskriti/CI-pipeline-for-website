@@ -2,6 +2,9 @@
   #style.css
 \*-----------------------------------*/
 
+.version {
+  font-size: smaller;
+}
 
 /**
  * copyright 2022 @codewithsadee
