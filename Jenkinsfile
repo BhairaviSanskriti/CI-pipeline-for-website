@@ -32,10 +32,10 @@ pipeline{
                 script{
                     withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PSW')]){
                         echo 'Building image'
-                        sh 'docker build -t bhairavi-sanskriti-portoflio:${BUILD_NUMBER} .'
+                        sh 'docker build -t bhairavi-sanskriti-portofolio:${BUILD_NUMBER} .'
                         sh 'echo ${PSW} | docker login -u ${USER} --password-stdin'
                         echo 'Pushing image to DockerHub'
-                        sh 'docker push bhairavi-sanskriti-portoflio:${BUILD_NUMBER}'
+                        sh 'docker push bhairavi-sanskriti-portofolio:${BUILD_NUMBER}'
                     }
                 }
             }
