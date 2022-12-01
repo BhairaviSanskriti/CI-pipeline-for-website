@@ -11,7 +11,7 @@ def deployApp(){
 }
 
 def updateVersion(){
-    echo 'Updating version of your application ...'
+    echo 'Updating version of the application ...'
 
     sh'''
         sed -i 's/Version:.*/Version: '"${BUILD_NUMBER}"'/g' index.html
