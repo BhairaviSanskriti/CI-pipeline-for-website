@@ -14,7 +14,7 @@ def updateVersion(){
     echo 'Updating version of your application ...'
 
     sh'''
-        sed -i 's/Version:.*/Version: '"${BUILD_NUMBER}"'g/' index.html
+        sed -i 's/Version:.*/Version: '"${BUILD_NUMBER}"'/g' index.html
     '''
 }
 
