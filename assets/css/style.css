@@ -211,6 +211,10 @@ article {
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
+ion-icon {
+  pointer-events: none;
+}
+
 article { display: none; }
 
 article.active {
