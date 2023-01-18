@@ -43,7 +43,7 @@
 
         <figure class="avatar-box">
           <!-- <img src="./assets/images/my-avatar.png" alt="Sanskriti" width="80"> -->
-          <img src="./assets/images/sanskriti.jpg" alt="Sanskriti" width="80">
+          <img src="./assets/images/sanskriti.png" alt="Sanskriti" width="80">
         </figure>
 
         <div class="info-content">
@@ -124,7 +124,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>New Delhi, India</address>
+              <address>New Delhi, Bharat</address>
             </div>
 
           </li>
@@ -201,6 +201,10 @@
             <button class="navbar-link" data-nav-link>Blogs</button>
           </li>
 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Badges</button>
+          </li>
+
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li> -->
@@ -229,7 +233,7 @@
           </p>
 
           <p>
-            I build DevOps projects using tools like Linux, git, docker, Kubernetes, Helm, and Jenkins. I like to share my learning through blogging.
+            I build DevOps projects using tools like Linux, git, docker, Kubernetes, Helm, Jenkins and AWS.  I am learning the IaC tool Terraform these days. I like to share my learning through blogging.
           </p>
           <p>
             Currently, I am looking for job opportunities(both internship and full-time) in DevOps.
@@ -241,9 +245,9 @@
           - service
         -->
 
-        <section class="service">
+        <!-- <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm doing</h3>
 
           <ul class="service-list">
 
@@ -279,7 +283,7 @@
 
             </li>
 
-            <!-- <li class="service-item">
+             <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
@@ -309,11 +313,47 @@
                 </p>
               </div>
 
-            </li>  -->
+            </li>
 
           </ul>
 
+        </section> -->
+        <section class="journey">
+
+          <h3 class="h3 skills-title">My DevOps Journey</h3>
+          
+          <!-- <ul class="blog-posts-list"> -->
+
+            <li class="blog-post-item">
+              <a href="https://github.com/BhairaviSanskriti/My-DevOps-Journey" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/My DevOps Journey.png" alt="DevOps Journey" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">IaC</p>
+  
+                    <span class="dot"></span>
+  
+                    <time datetime="2023-01-16">Jan 16, 2023</time>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">My DevOps Journey</h3>
+  
+                  <p class="blog-text">
+                    I am doing a 100-day DevOps challenge. I share notes, projects, and blogs that I make during these challenges. Check it out.
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+          <!-- </ul> -->
         </section>
+        <br>
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -394,6 +434,20 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Jenkins</h5>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS (Fundamentals)</h5>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Terraform (Fundamentals)</h5>
               </div>
 
             </li>
@@ -751,8 +805,10 @@
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
-            </li>
-
+            </li> 
+            <li class="filter-item">
+              <button class="active" data-filter-btn>CNCF</button>
+            </li> 
             <li class="filter-item">
               <button data-filter-btn>Docker</button>
             </li>
@@ -788,6 +844,9 @@
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
+              <li class="select-item">
+                <button data-select-item>CNCF</button>
+              </li>
 
               <li class="select-item">
                 <button data-select-item>Docker</button>
@@ -810,6 +869,24 @@
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="cncf">
+              <a href="https://github.com/kubescape/kubescape/pull/872" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-0.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Contributed to documentation of a CNCF project Kubescape</h3>
+
+                <p class="project-category">CNCF</p>
+
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="kubernetes">
               <a href="https://github.com/BhairaviSanskriti/My-DevOps-Journey/tree/main/Kubernetes/Projects/Deploying%20portfolio%20using%20k8s" target="_blank">
@@ -976,37 +1053,65 @@
         </header>
 
         <section class="blog-posts">
-
-          <li class="blog-post-item">
-            <a href="https://bhairavisanskriti.hashnode.dev/launch-an-ec2-instance-using-terraform" target="_blank">
-
-              <figure class="blog-banner-box">
-                <img src="./assets/images/blog-10.jpg" alt="Launch an EC2 instance using Terraform" loading="lazy">
-              </figure>
-
-              <div class="blog-content">
-
-                <div class="blog-meta">
-                  <p class="blog-category">Terraform</p>
-
-                  <span class="dot"></span>
-
-                  <time datetime="2022-12-17">Dec 17, 2022</time>
-                </div>
-
-                <h3 class="h3 blog-item-title">Launch an EC2 instance using Terraform</h3>
-
-                <p class="blog-text">
-                  Terraform File + Commands -> EC2 instance
-                </p>
-
-              </div>
-
-            </a>
-          </li>
-
+          
           <ul class="blog-posts-list">
 
+            <li class="blog-post-item">
+              <a href="https://bhairavisanskriti.hashnode.dev/what-is-infrastructure-as-code" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-11.jpg" alt="LWhat is Infrastructure as Code" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">IaC</p>
+  
+                    <span class="dot"></span>
+  
+                    <time datetime="2023-01-16">Jan 16, 2023</time>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">What is Infrastructure as Code</h3>
+  
+                  <p class="blog-text">
+                    Learn about what & why of IaC along with its benefits and challenges
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+            
+            <li class="blog-post-item">
+              <a href="https://bhairavisanskriti.hashnode.dev/launch-an-ec2-instance-using-terraform" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-10.jpg" alt="Launch an EC2 instance using Terraform" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">Terraform</p>
+  
+                    <span class="dot"></span>
+  
+                    <time datetime="2022-12-17">Dec 17, 2022</time>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">Launch an EC2 instance using Terraform</h3>
+  
+                  <p class="blog-text">
+                    Terraform File + Commands -> EC2 instance
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+  
             <li class="blog-post-item">
               <a href="https://bhairavisanskriti.hashnode.dev/publish-docker-images-to-nexus-using-jenkins" target="_blank">
 
@@ -1262,13 +1367,183 @@
             </li>
 
           </ul>
-
         </section>
-
       </article>
 
+      <article class="badges" data-page="badges">
 
+        <header>
+          <h2 class="h2 article-title">Badges</h2>
+        </header>
+        <section class="projects">
 
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>GitHub</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AWS</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Blog</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>GitHub</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AWS</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Blog</button>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="badge-posts">
+          
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item project-item active" data-filter-item data-category="aws">
+              <a href="https://www.credly.com/badges/b28008d2-de59-4a1f-8103-090c641c498f/public_url" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/aws-cloud-quest-cloud-practitioner.png" alt="AWS Badge" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">AWS</p>
+  
+                    <span class="dot"></span>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">AWS Cloud Quest: Cloud Practitioner</h3>
+  
+                  <p class="blog-text">
+                    Demonstrated basic solution building knowledge using AWS services and have a fundamental understanding of AWS Cloud concepts.
+                  <br> Acquired hands-on experience with compute, networking, database and security services.</p>
+                  
+  
+                </div>
+  
+              </a>
+            </li>
+
+            
+            <li class="blog-post-item project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/users/BhairaviSanskriti/achievements/starstruck" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/github-badge-1.png" alt="GitHub Badge" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">GitHub</p>
+  
+                    <span class="dot"></span>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">Starstruck</h3>
+  
+                  <p class="blog-text">
+                    Got 16 stars on "My DevOps Journey" repository
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+
+            <li class="blog-post-item project-item  active" data-filter-item data-category="github">
+              <a href="https://github.com/users/BhairaviSanskriti/achievements/pull-shark" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/github-badge-2.png" alt="GitHub Badge" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">GitHub</p>
+  
+                    <span class="dot"></span>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">Pull Shark</h3>
+  
+                  <p class="blog-text">
+                    Contributed in documentation of a CNCF project Kubescape
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+
+            <li class="blog-post-item project-item  active" data-filter-item data-category="blog">
+              <a href="https://bhairavisanskriti.hashnode.dev/badges" target="_blank">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/hashnode-badge.png" alt="Hashnode Badge" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">Blog</p>
+  
+                    <span class="dot"></span>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">Earned 3 badges for Blogging</h3>
+  
+                  <p class="blog-text">
+                    Recieved badges in various categories
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+
+          </ul>   -->
+      </article>
 
 
       <!--
@@ -1312,7 +1587,7 @@
 
         </section>
 
-      </article> -->
+      </article>
 
     </div>
 
